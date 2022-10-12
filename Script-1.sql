@@ -22,7 +22,7 @@ create table empregado2(
 create table departamento(
 	cod_depto integer not null,
 	nome_depto varchar(40) not null
-	default 'Departamento Novo',
+	default 'Departamento Novo', -- definindo que cada nova inserção na tabela que não possuir valor setado em 'nome_depto', vai receber como padrão o valor 'Departamento Novo'
 	constraint pk_departamento
 		primary key (cod_depto)
 )
